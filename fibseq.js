@@ -26,4 +26,20 @@ console.log(fibs8);
     
 */
 
+function fibsRec(num, arr = [0, 1]) {
+    if (num === 2) {
+        return arr;
+    } else {
+        let stepOne = (arr[arr.length - 1])
+        let stepTwo = (arr[arr.length - 2])
+    
+        arr.push(stepOne + stepTwo);
+        return fibsRec(num - 1, arr); 
+    }
+}
+
+let fibsRec8 = fibsRec(8);
+
+console.log(fibsRec8);
+
 
