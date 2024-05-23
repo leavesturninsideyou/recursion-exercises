@@ -1,29 +1,3 @@
-/*
-
-Psuedo code:
-
-merge sort (arr) {
-
-    beginning = arr[0]
-    end = (arr.length - 1)
-    middle: ((arr.length - 1) - arr[0]) / 2 
-
-    want start, end, and middle to be reassigned
-
-    if beginning is greater than end:
-        call function again
-    else: 
-        return fully sorted array
-
-    split given arr into halves
-    split array until two single values
-    compare minimums
-    make minimum first val in sorted array
-    remaining values get pushed
-}
-
-*/
-
 function mergeSort(arr) {
     const half = arr.length /  2;
 
